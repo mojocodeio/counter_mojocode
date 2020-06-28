@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 
 /** components */
 import Form from './Form/Form'
+import List from './List/List'
 
 export const TodoList = () => {
     const [todos, setTodos] = useState([])
@@ -34,7 +35,11 @@ export const TodoList = () => {
     return (
         <Fragment>
             <Form addTodo={addTodo} />
-
+            <List
+                todos={todos}
+                toggleTodo={toggleTodo}
+                deleteTodo={deleteTodo}
+            />
         </Fragment>
     )
 }
