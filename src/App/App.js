@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 /** components */
 import Counter from './Counter/Counter'
+import Section from './Section/Section'
 
 export const App = () => (
-  <Counter />
+  <Fragment>
+    <Section>
+      <Counter />
+    </Section>
+  </Fragment>
 )
 
 export default App

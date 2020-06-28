@@ -1,0 +1,6 @@
+.section {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding: 24px;
+    margin-bottom: 24px;
+}
